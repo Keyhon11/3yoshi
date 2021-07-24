@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Study Room</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google font montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Breakout Room styles -->
+    <link href="styles1.css" rel="stylesheet" />
+
+    <script src="buttons.js" defer></script>
+
+</head>
+
+<body id="extendBody">
+    <div class="row">
+        <div class="col">
+            <div class="container text-center">
+                <div class="card-body contacts_body ">
+                    <ul class="contacts row d-flex flex-nowrap">
+                        <li class="active">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>John</span>
+                                    <p>John is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contacts-inactive">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>Joe</span>
+                                    <p>Joe is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>Sarah</span>
+                                    <p>Sarah is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>Bob</span>
+                                    <p>Bob is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>Jackson</span>
+                                    <p>Jackson is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contacts-inactive">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>James</span>
+                                    <p>James is here</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="d-flex bd-highlight col-3 text-center">
+                                <div class="img_cont">
+                                    <img src="cute cow.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>Joe</span>
+                                    <p>Joe is here</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- end of peoples row -->
+
+    <div class="row">
+
+        <div class="col-8">
+            <div class="container text-center my-0" id="videoContainer">
+                <iframe class="embed-responsive-item embed-responsive-16by9" id="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/lTRiuFIWV54?start=8&autoplay=1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+            <div class="container col text-center">
+                <i class="fa fa-microphone fa-3x mr-5 my-2" onclick="mute_unmute(this)"></i>
+
+                <!-- <i class="fa fa-camera"></i> -->
+
+                <i class="fa fa-comment fa-3x" onclick="openForm()"></i>
+            </div>
+        </div><!-- end of col-8 -->
+
+
+        <div class="col-4">
+            <div class="chat-popup FixedHeightContainer" id="myForm">
+                <form class="form-container ">
+
+                    <div class="form-popup Content">
+                        <div id="chat">
+                            <div class="chat-container ">
+                                <h3>John</h3>
+                                <img src="cute cow.png" alt="Avatar" class=" user_img">
+                                <p>Hello. How are you today?</p>
+                                <span class="time-right">11:00</span>
+                            </div>
+
+                            <div class="chat-container chat-green ">
+                                <h3>Jackson</h3>
+                                <img src="cute cow.png" alt="Avatar" class=" user_img">
+                                <p>Hey! I'm fine. Thanks for asking!</p>
+                                <span class="time-left">11:01</span>
+                            </div>
+
+                            <div class="chat-container ">
+                                <h3>John</h3>
+                                <img src="cute cow.png" alt="Avatar" class=" user_img">
+                                <p>Sweet! So, what do you wanna do today?</p>
+                                <span class="time-right">11:02</span>
+                            </div>
+
+                            <div class="chat-container chat-green ">
+                                <h3>Jackson</h3>
+                                <img src="cute cow.png" alt="Avatar" class=" user_img">
+                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                                <span class="time-left">11:05</span>
+                            </div>
+                            <div class="chat-container chat-blue ">
+                                <h3>Sarah</h3>
+                                <img src="cute cow.png" alt="Avatar" class="user_img">
+                                <p>ello! im new here~ nice to meet everyone~</p>
+                                <span class="time-left">11:10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" onclick="exitRoom()" class="btn btn-primary">Exit Room</button>
+                </div><!-- end of row -->
+            </div>
+        </div>
+        <!-- end of row -->
+
+
+        <footer class="page-footer font-small blue pt-4">
+            <div class="container">
+
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> 3 Yoshi</a>
+                </div>
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fa fa-facebook-f text-white mr-4"></i></a>
+                        <a href="#"><i class="fa fa-instagram text-white mr-4"></i></a>
+                        <a href="#"><i class="fa fa-envelope text-white mr-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

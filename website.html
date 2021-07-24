@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveIn</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google font montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- custom sytles -->
+    <link href="styles1.css" rel="stylesheet" />
+    <script src="buttons.js" defer></script>
+</head>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="col jumbotron bg-light">
+            <h1 class="col text-center">Welcome to DriveIn</h1>
+            <hr class="my-1">
+            <p class="text-center">Connect with people with similar interests from anywhere!</p>
+            <p class="text-center">Forge new deep friendships!</p>
+        </div>
+
+
+        <!-- <div class="jumbotron"> reference!
+            <h1 class="display-3">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                            calling extra attention to featured content or information.</p>
+            <hr class="my-2">
+            <p>It uses utility classes for typography and
+               spacing to space content out within the larger container.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
+            </p>
+          </div> -->
+
+        <div class="row">
+
+            <div class="col form-group">
+                <label for="name">Name? 名称？ Nama? பெயர்?</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter Name" name="Name">
+            </div>
+
+            <div class="col form-group">
+                <label for="age">Age? 年龄？ Umur? வயது?</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter Age" name="Age">
+            </div>
+
+            <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Default checkbox
+                </label>
+            </div> -->
+
+            <div class="col form-group">
+                <label for="language">Language? 语? Bahasa? மொழியா?</label>
+                <select class="form-control" id="language">
+                    <option>English</option>
+                    <option>Chinese</option>
+                    <option>Malay</option>
+                    <option>Tamil</option>
+                </select>
+            </div>
+
+            <!-- <div class="form-check">
+                <label for="exampleRadios1">What is your preferred language? :</label>
+
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                </label>
+            </div> -->
+        </div><!-- end of row -->
+        <div class="row">
+            <div class="col form-group">
+                <label for="breakout_Rooms">Which room would you like to go to? 你想去哪个房间? Anda ingin ke bilik mana?
+                    நீங்கள் எந்த அறைக்கு செல்ல விரும்புகிறீர்கள்?</label>
+                <select class="form-control" id="breakout_Rooms">
+                    <option>Study</option>
+                    <option>Games</option>
+                    <option>Anime</option>
+                    <option>K-pop</option>
+                    <option>Music</option>
+                    <option>Sports</option>
+                    <option>Movie</option>
+                    <option>Comedy</option>
+                    <option>Vlog</option>
+                </select>
+            </div>
+        </div><!-- end of row -->
+
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" onclick="breakoutRoom()" class="btn btn-primary">Enter room</button>
+            </div><!-- end of row -->
+        </div>
+        <div id="demo1">
+
+        </div>
+        <footer class="page-footer bg-information">
+            <div class="footerbackground">
+                <div class="container">
+                    <div class="row py-4 d-flex align-items-center">
+    
+                        <div class="col-md-12 text-center">
+                            <a href="#"><i class="fa fa-facebook-f text-white mr-4"></i></a>
+                            <a href="#"><i class="fa fa-instagram text-white mr-4"></i></a>
+                            <a href="#"><i class="fa fa-envelope text-white mr-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+                        
+      
+</body>
+
+</html>

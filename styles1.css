@@ -1,0 +1,243 @@
+/* File Name: styles1.css
+Authors: 3 Yoshi */
+
+body {
+    background-color: aliceblue;
+}
+
+/* Configuration Styles */
+
+h1 {
+    font-family: montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-family: montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+.jumbotron {
+    background-image: url(driveinstock.jpeg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    width: 100%;
+    height: 25em;
+}
+
+#videoContainer {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.user_img {
+    height: 70px;
+    width: 70px;
+    border: 1.5px solid #f5f6fa;
+}
+
+.card {
+    height: 500px;
+    border-radius: 15px !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.active {
+    background-color: rgba(184, 255, 43, 0.3);
+    border-radius: 50px;
+    border: 2px;
+    border-color: aqua;
+}
+
+.contacts-inactive {
+    background-color: rgb(245, 245, 245);
+    border-radius: 50px;
+}
+
+.contacts {
+    list-style: none;
+}
+
+.contacts_body {
+    padding: 0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.fa-microphone-slash {
+    color: red
+}
+
+/* chat styles */
+
+/* Chat containers */
+
+.chat-container {
+    border: 2px solid #dedede;
+    background-color: #ffb7b7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+
+.chat-green {
+    border-color: #ccc;
+    background-color: rgb(184, 252, 158);
+}
+
+.chat-blue {
+    border-color: #ccc;
+    background-color: rgb(189, 200, 253);
+}
+
+/* Clear floats */
+
+.chat-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+
+.chat-container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+
+.chat-container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Style time text */
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+/* {box-sizing: border-box;} */
+
+#myform {
+    display: none;
+}
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+    display: block;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.FixedHeightContainer {
+    float: right;
+    margin-right: 100px;
+    height: 500px;
+    width: 350px;
+    padding: 3px;
+}
+
+.Content {
+    height: 500px;
+    overflow: auto;
+}
+div#buttons {
+    text-align: center;
+    width: 100%;
+ }
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(136, 217, 255);
+    color: white;
+    margin-top: 200px;
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 16px;
+    padding: 0;
+}
+
+footer p a {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
